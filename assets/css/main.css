@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('/assets/fonts/coopbl-webfont.woff2') format('woff2'),
+    url('/assets/fonts/coopbl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

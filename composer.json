@@ -1,0 +1,19 @@
+{
+  "name": "vendor/urlshortener",
+  "description": "Link shortener",
+  "authors": [
+    {
+      "name": "MojtabaSafarkhani",
+      "email": "mojtabasfr01@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "vendor\\urlshortener\\": "src/"
+    }
+  }
+}
