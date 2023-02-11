@@ -1,26 +1,21 @@
 <?php
 
-namespace vendor\urlshortener\Config;
+namespace vendor\urlshortener\Services;
 
 use Exception;
 use PDO;
+use vendor\urlshortener\Config\Config;
 
 class DataBase
 {
-    private string $host = 'localhost';
-
-    private string $user = 'root';
-
-    private string $db_name = 'url_shortener';
-
-    private string $password = '';
-
     public PDO $pdo;
 
     public function __construct()
     {
+        $config = new Config();
+
         try {
-            $this->pdo = new PDO("mysql:host=$this->host;dbname=$this->db_name", $this->user, $this->password);
+            $this->pdo = new PDO("mysql:host=" . $config->getDbHost() . ";dbname=" . $config->getDbName(), $config->getDbUserName(), $config->getDbPassword());
 
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

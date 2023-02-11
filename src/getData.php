@@ -1,11 +1,11 @@
 <?php
 
-use vendor\urlshortener\Controller\UrlController;
-use vendor\urlshortener\Validation\UrlFormValidation;
+use vendor\urlshortener\Controllers\Admins\LinksController;
+use vendor\urlshortener\Validations\LinksValidation;
 
 require "../vendor/autoload.php";
 
-$validation = new UrlFormValidation($_GET['url']);
+$validation = new LinksValidation($_GET['url']);
 
 if (!$validation->urlIsValid() || !$validation->urlLengthIsValid()) {
 
@@ -16,7 +16,7 @@ if (!$validation->urlIsValid() || !$validation->urlLengthIsValid()) {
     exit();
 }
 
-$url_class = new UrlController();
+$url_class = new LinksController();
 
 $lastId = $url_class->insertUrl($_GET['url']);
 
