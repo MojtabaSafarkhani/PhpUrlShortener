@@ -1,8 +1,8 @@
 <?php
 
-namespace vendor\urlshortener\Validation;
+namespace vendor\urlshortener\Validations;
 
-class UrlFormValidation
+class LinksValidation
 {
     public string $url;
 
