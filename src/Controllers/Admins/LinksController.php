@@ -1,14 +1,14 @@
 <?php
 
 
-namespace vendor\urlshortener\Controller;
+namespace vendor\urlshortener\Controllers\Admins;
 
 
 use PDO;
-use vendor\urlshortener\Config\DataBase;
+use vendor\urlshortener\Services\DataBase;
 
 
-class UrlController
+class LinksController
 {
     private DataBase $db;
 
