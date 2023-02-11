@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'vendor\\urlshortener\\' => array($baseDir . '/src'),
+    'App\\' => array($baseDir . '/src'),
 );

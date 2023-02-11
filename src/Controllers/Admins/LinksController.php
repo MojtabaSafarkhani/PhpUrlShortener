@@ -1,7 +1,7 @@
 <?php
 
 
-namespace vendor\urlshortener\Controllers\Admins;
+namespace App\Controllers\Admins;
 
 
 use PDO;

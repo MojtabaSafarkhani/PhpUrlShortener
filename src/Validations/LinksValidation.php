@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\urlshortener\Validations;
+namespace App\Validations;
 
 class LinksValidation
 {

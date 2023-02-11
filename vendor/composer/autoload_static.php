@@ -7,23 +7,25 @@ namespace Composer\Autoload;
 class ComposerStaticInit78d820b6b48186b7a8fd46b3ac953f1a
 {
     public static $prefixLengthsPsr4 = array (
-        'v' => 
+        'A' => 
         array (
-            'vendor\\urlshortener\\' => 20,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'vendor\\urlshortener\\' => 
+        'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
+        'App\\Config\\Config' => __DIR__ . '/../..' . '/src/Config/Config.php',
+        'App\\Controllers\\Admins\\LinksController' => __DIR__ . '/../..' . '/src/Controllers/Admins/LinksController.php',
+        'App\\Services\\DataBase' => __DIR__ . '/../..' . '/src/Services/DataBase.php',
+        'App\\Validations\\LinksValidation' => __DIR__ . '/../..' . '/src/Validations/LinksValidation.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'vendor\\urlshortener\\Config\\DataBase' => __DIR__ . '/../..' . '/src/Config/DataBase.php',
-        'vendor\\urlshortener\\Controller\\UrlController' => __DIR__ . '/../..' . '/src/Controller/UrlController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

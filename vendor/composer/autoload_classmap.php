@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Config\\Config' => $baseDir . '/src/Config/Config.php',
+    'App\\Controllers\\Admins\\LinksController' => $baseDir . '/src/Controllers/Admins/LinksController.php',
+    'App\\Services\\DataBase' => $baseDir . '/src/Services/DataBase.php',
+    'App\\Validations\\LinksValidation' => $baseDir . '/src/Validations/LinksValidation.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'vendor\\urlshortener\\Config\\DataBase' => $baseDir . '/src/Config/DataBase.php',
-    'vendor\\urlshortener\\Controller\\UrlController' => $baseDir . '/src/Controller/UrlController.php',
 );

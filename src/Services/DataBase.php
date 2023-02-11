@@ -1,10 +1,10 @@
 <?php
 
-namespace vendor\urlshortener\Services;
+namespace App\Services;
 
 use Exception;
 use PDO;
-use vendor\urlshortener\Config\Config;
+use App\Config\Config;
 
 class DataBase
 {

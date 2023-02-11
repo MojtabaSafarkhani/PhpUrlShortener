@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\urlshortener\Config;
+namespace App\Config;
 
 class Config
 {

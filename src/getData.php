@@ -1,7 +1,7 @@
 <?php
 
-use vendor\urlshortener\Controllers\Admins\LinksController;
-use vendor\urlshortener\Validations\LinksValidation;
+use App\Controllers\Admins\LinksController;
+use App\Validations\LinksValidation;
 
 require "../vendor/autoload.php";
 
